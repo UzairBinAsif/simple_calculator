@@ -8,17 +8,17 @@ const answer = await inquirer.prompt([
         message: "select one of the operator",
         type: "list",
         name: "operator",
-        choices: ["Add", "sub", "div", "multiply"]
+        choices: ["Add", "subtract", "multiply", "divide"]
     },
 ]);
 // conditional statements
 if (answer.operator === "Add") {
     console.log(answer.Firstnumber + answer.Secondnumber);
 }
-else if (answer.operator === "sub") {
+else if (answer.operator === "subtract") {
     console.log(answer.Firstnumber - answer.Secondnumber);
 }
-else if (answer.operator === "div") {
+else if (answer.operator === "divide") {
     console.log(answer.Firstnumber / answer.Secondnumber);
 }
 else if (answer.operator === "multiply") {
